@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# TODO: Organise these endpoints with sensible names
+# Show the referer header
+GET     /                           controllers.RefererController.index
+# Show meta-information about the HTTP request, such as HTTP headers
+GET     /meta                       controllers.RefererController.meta
+# Filter referer headers and forward the user on to the provided URL
+GET     /filter                     controllers.RefererController.filter(url: java.net.URL)
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
