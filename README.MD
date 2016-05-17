@@ -1,6 +1,8 @@
 Affiliate Referer Server
 ========================
 
+Currently a work-in-progress.
+
 A server for debugging the Referer [SIC] header in HTTP requests and for blanking referers. The server is implemented using Play Framework and Scala.
 
 An example use case for blanking referers is to keep affiliate campaigns and landing pages secret from affiliate managers who might steal them to use for their own gain. 
